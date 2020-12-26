@@ -194,6 +194,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &104320659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 104320660}
+  - component: {fileID: 104320662}
+  - component: {fileID: 104320661}
+  m_Layer: 0
+  m_Name: Player_Dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &104320660
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 104320659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &104320661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 104320659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70cd71742fde22f4f9c51fba2b6dfeec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &104320662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 104320659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b51c560e47283e48b33b783a07d7c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5
+  jumpPower: 10
+  secondJumpPower: 10
+  radius: 0.3
+  groundCheckPosition: {fileID: 0}
+  layerGround:
+    serializedVersion: 2
+    m_Bits: 0
+  smokePosition: {fileID: 0}
+  gameStarted: 0
 --- !u!1 &685648728
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,8 +289,10 @@ MonoBehaviour:
   distance_between_platforms: 0
   platformPrefab: {fileID: 0}
   platform_parent: {fileID: 0}
+  monster: {fileID: 0}
+  monster_parent: {fileID: 0}
   health_collectable: {fileID: 0}
-  healtCollectable_parent: {fileID: 0}
+  healthCollectable_parent: {fileID: 0}
   platformPosition_MinY: 0
   platformPosition_MaxY: 10
   platformLength_Min: 1
