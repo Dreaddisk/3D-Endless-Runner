@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 104320660}
   - component: {fileID: 104320662}
   - component: {fileID: 104320661}
+  - component: {fileID: 104320663}
   m_Layer: 0
   m_Name: Player_Dummy
   m_TagString: Untagged
@@ -256,6 +257,21 @@ MonoBehaviour:
     m_Bits: 0
   smokePosition: {fileID: 0}
   gameStarted: 0
+--- !u!114 &104320663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 104320659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c12b18195b53a5408756dcdf16511a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioFootVolume: 1
+  soundEffectPitchRandomness: 0.05
+  genericFoodSound: {fileID: 0}
+  metalFootSound: {fileID: 0}
 --- !u!1 &685648728
 GameObject:
   m_ObjectHideFlags: 0
