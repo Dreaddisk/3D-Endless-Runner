@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     private bool playerJumped = false;
     private bool canDoubleJump = false;
 
-    // private PlayerAnimation playerAnim;
+    private PlayerAnimation playerAnim;
 
     public GameObject smokePosition;
 
@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
         }
         else if(Input.GetKeyUp(KeyCode.Space) && isGrounded)
         {
-            //playerAnim.DidJump();
+            playerAnim.DidJump();
             myBody.AddForce(new Vector3(0, jumpPower, 0));
             playerJumped = true;
             canDoubleJump = true;
@@ -82,7 +82,7 @@ public class Player : MonoBehaviour
     {
         if(isGrounded)
         {       
-            //playerAnim.Didjump();
+            playerAnim.DidJump();
             myBody.AddForce(new Vector3(0, jumpPower, 0));
             playerJumped = true;
             canDoubleJump = true;
@@ -106,7 +106,7 @@ public class Player : MonoBehaviour
         //playerShoot.canShoot = true;
         //GameplayController.instance.canCountScore = true;
         smokePosition.SetActive(true);
-        //playerAnim.PlayerRun();
+        playerAnim.PlayerRun();
     }
 
     private void OnCollisionEnter(Collision target)
@@ -116,7 +116,7 @@ public class Player : MonoBehaviour
             if(playerJumped)
             {
                 playerJumped = false;
-                //playerAnim.Didland();
+                playerAnim.DidLand();
             }
         }
     }
