@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private bool gameStarted;    // check in the inspector;
 
-    //private BGScroller bgScroller;
+    private BGScroller bgScroller;
 
     // private PlayerHealthDamageShoot playerShoot;
 
@@ -102,7 +102,7 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         gameStarted = true;
-        //bgScroller.canScrool = true;
+        bgScroller.canScroll = true;
         //playerShoot.canShoot = true;
         //GameplayController.instance.canCountScore = true;
         smokePosition.SetActive(true);
