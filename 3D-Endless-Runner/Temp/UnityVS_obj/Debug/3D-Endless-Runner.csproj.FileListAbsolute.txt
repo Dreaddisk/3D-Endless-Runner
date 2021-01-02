@@ -1,2 +1,0 @@
-C:\Users\joey_\Documents\Jose\Unity Games\3D-Endless-Runner\3D-Endless-Runner\Temp\UnityVS_obj\Debug\3D-Endless-Runner.csprojAssemblyReference.cache
-C:\Users\joey_\Documents\Jose\Unity Games\3D-Endless-Runner\3D-Endless-Runner\Temp\UnityVS_obj\Debug\3D-Endless-Runner.csproj.CoreCompileInputs.cache

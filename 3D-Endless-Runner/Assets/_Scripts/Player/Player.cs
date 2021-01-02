@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
 
     private BGScroller bgScroller;
 
-    // private PlayerHealthDamageShoot playerShoot;
+    private PlayerHealthDamageShoot playerShoot;
 
     private Button jumpButton;
     #endregion
@@ -103,7 +103,7 @@ public class Player : MonoBehaviour
 
         gameStarted = true;
         bgScroller.canScroll = true;
-        //playerShoot.canShoot = true;
+        playerShoot.canShoot = true;
         //GameplayController.instance.canCountScore = true;
         smokePosition.SetActive(true);
         playerAnim.PlayerRun();
