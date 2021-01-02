@@ -311,6 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 685648730}
   - component: {fileID: 685648729}
+  - component: {fileID: 685648731}
   m_Layer: 0
   m_Name: Level Generator
   m_TagString: Untagged
@@ -360,6 +361,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &685648731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685648728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e240db84518e7824fb32477cb11ef626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platform: {fileID: 0}
+  platform_parent: {fileID: 0}
+  monster: {fileID: 0}
+  monster_parent: {fileID: 0}
+  health_Collectable: {fileID: 0}
+  health_Collectable_Parent: {fileID: 0}
+  levelLength: 100
+  distance_Between_Platforms: 15
+  MIN_Position_Y: 0
+  MAX_Position_Y: 7
+  chanceForMonsterExistence: 0.25
+  chanceForHealthCollectableExistence: 0.1
+  healthCollectable_MinY: 1
+  healthCollectable_MaxY: 3
 --- !u!1 &1105251220
 GameObject:
   m_ObjectHideFlags: 0
